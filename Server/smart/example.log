@@ -1,0 +1,241 @@
+DEBUG main org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver$DefaultResolver - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
+INFO main com.cy.store.StoreApplication - Started StoreApplication in 4.988 seconds (JVM running for 6.36)
+INFO main org.springframework.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+INFO main org.springframework.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+INFO http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2dfcd10b
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@66a5764d
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+INFO http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - GET "/web/login.html", parameters={}
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.DispatcherServlet - GET "/bootstrap3/css/bootstrap.css", parameters={}
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.DispatcherServlet - GET "/bootstrap3/font-awesome-4.7.0/css/font-awesome.css", parameters={}
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.DispatcherServlet - GET "/css/top.css", parameters={}
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.DispatcherServlet - GET "/css/login.css", parameters={}
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.DispatcherServlet - GET "/css/index.css", parameters={}
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.DispatcherServlet - GET "/css/layout.css", parameters={}
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.DispatcherServlet - GET "/css/footer.css", parameters={}
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.DispatcherServlet - GET "/bootstrap3/js/holder.js", parameters={}
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.DispatcherServlet - GET "/bootstrap3/jquery-1.9.1.min.js", parameters={}
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.DispatcherServlet - GET "/bootstrap3/js/jquery.cookie.js", parameters={}
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.DispatcherServlet - GET "/js/autoLogin.js", parameters={}
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - GET "/bootstrap3/js/bootstrap.js", parameters={}
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/stumalllogo.png", parameters={}
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/footerFont.png", parameters={}
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/android.png", parameters={}
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/ios.png", parameters={}
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/erweima.png", parameters={}
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/bg1.png", parameters={}
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.DispatcherServlet - GET "/bootstrap3/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0", parameters={masked}
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.DispatcherServlet - Completed 302 FOUND
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.DispatcherServlet - POST "/users/login", parameters={masked}
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.cy.store.controller.UserController#login(String, String, HttpSession)
+DEBUG http-nio-8081-exec-3 org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+DEBUG http-nio-8081-exec-3 org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@366dd399] was not registered for synchronization because synchronization is not active
+DEBUG http-nio-8081-exec-3 org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - allowPoolSuspension................................false
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - autoCommit................................true
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - catalog................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - connectionInitSql................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - connectionTestQuery................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - connectionTimeout................................30000
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - dataSource................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - dataSourceClassName................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - dataSourceJNDI................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - dataSourceProperties................................{password=<masked>}
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - driverClassName................................"com.mysql.cj.jdbc.Driver"
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - healthCheckProperties................................{}
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - healthCheckRegistry................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - idleTimeout................................600000
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - initializationFailTimeout................................1
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - isolateInternalQueries................................false
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - jdbcUrl................................jdbc:mysql://1.116.161.71:3306/traceability?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - keepaliveTime................................0
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - leakDetectionThreshold................................0
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - maxLifetime................................1800000
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - maximumPoolSize................................10
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - metricRegistry................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - metricsTrackerFactory................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - minimumIdle................................10
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - password................................<masked>
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - poolName................................"HikariPool-1"
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - readOnly................................false
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - registerMbeans................................false
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - scheduledExecutor................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - schema................................none
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - threadFactory................................internal
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - transactionIsolation................................default
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - username................................"root"
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.HikariConfig - validationTimeout................................5000
+INFO http-nio-8081-exec-3 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+DEBUG http-nio-8081-exec-3 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bceca3f
+INFO http-nio-8081-exec-3 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+DEBUG http-nio-8081-exec-3 org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@33278371 wrapping com.mysql.cj.jdbc.ConnectionImpl@4bceca3f] will not be managed by Spring
+DEBUG http-nio-8081-exec-3 com.cy.store.mapper.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM t_user WHERE username = ?
+DEBUG http-nio-8081-exec-3 com.cy.store.mapper.UserMapper.findByUsername - ==> Parameters: test001(String)
+DEBUG HikariPool-1 housekeeper com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+DEBUG http-nio-8081-exec-3 com.cy.store.mapper.UserMapper.findByUsername - <==      Total: 1
+DEBUG http-nio-8081-exec-3 org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@366dd399]
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [com.cy.store.util.JsonResult@4549054d]
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG HikariPool-1 connection adder com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36fee9ce
+DEBUG HikariPool-1 connection adder com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@424501ff
+DEBUG HikariPool-1 connection adder com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13d38e3a
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - GET "/web/index.html", parameters={}
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.DispatcherServlet - GET "/css/webindex.css", parameters={}
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.DispatcherServlet - GET "/bootstrap3/jquery-1.8.3.min.js", parameters={}
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.DispatcherServlet - GET "/js/menu.js", parameters={}
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/index_banner1.png", parameters={}
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/index_banner2.png", parameters={}
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/index_banner3.png", parameters={}
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/index_banner4.png", parameters={}
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.DispatcherServlet - GET "/images/index/index_banner5.png", parameters={}
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.DispatcherServlet - GET "/images/portal/02COMIXC5902A5122blue/collect.png", parameters={}
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - GET "/images/portal/002calculator1548A/collect.png", parameters={}
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.DispatcherServlet - GET "/images/portal/12(DELL)XPS13gold/collect.png", parameters={}
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.DispatcherServlet - GET "/images/portal/13LenovoIdeaPad310_black/collect.png", parameters={}
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-1 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-4 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.DispatcherServlet - GET "/images/portal/00GuangBo1040A5GBR0731/collect.png", parameters={}
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.DispatcherServlet - GET "/images/portal/001GuangBo)FB60322/collect.png", parameters={}
+DEBUG http-nio-8081-exec-8 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-3 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-6 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.DispatcherServlet - GET "/images/portal/11DELLran7000R1605Ssilvery/collect.png", parameters={}
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-2 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-7 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.DispatcherServlet - GET "/products/hot_list", parameters={}
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.resource.ResourceHttpRequestHandler - Resource not found
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+DEBUG HikariPool-1 connection adder com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3aa18aae
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.DispatcherServlet - GET "/bootstrap3/fonts/glyphicons-halflings-regular.woff", parameters={}
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/javascript, */*;q=0.01] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jul 29 17:55:34 CST 2023, status=404, error=Not Found, path=/products/hot_list}]
+DEBUG http-nio-8081-exec-5 org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+DEBUG http-nio-8081-exec-10 org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.resource.ResourceHttpRequestHandler - Resource not found
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jul 29 17:55:34 CST 2023, status=404, error=Not Found, path=/favicon.ico}]
+DEBUG http-nio-8081-exec-9 org.springframework.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+DEBUG HikariPool-1 connection adder com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@179df148
+DEBUG HikariPool-1 connection adder com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60c39b98
+DEBUG HikariPool-1 connection adder com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65862378
+DEBUG HikariPool-1 connection adder com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31be0a2
+DEBUG HikariPool-1 connection adder com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@214d5dde
+DEBUG HikariPool-1 connection adder com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+DEBUG HikariPool-1 housekeeper com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG HikariPool-1 housekeeper com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG MQTT Call: mqttConsumer org.springframework.integration.channel.DirectChannel - preSend on channel 'bean 'mqttInboundChannel'; defined in: 'class path resource [com/cy/store/config/MqttConfig.class]'; from source: 'org.springframework.core.type.classreading.SimpleMethodMetadata@350aac89'', message: GenericMessage [payload={
+  "msg": "hello world"
+}, headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=d013ec25-8ba2-82df-09a6-598987ee1458, mqtt_receivedTopic=topic1, mqtt_receivedQos=0, timestamp=1690624562308}]
+DEBUG MQTT Call: mqttConsumer org.springframework.integration.handler.ReplyProducingMessageHandlerWrapper - bean 'mqttConfig.handler.serviceActivator.handler' for component 'mqttConfig' received message: GenericMessage [payload={
+  "msg": "hello world"
+}, headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=d013ec25-8ba2-82df-09a6-598987ee1458, mqtt_receivedTopic=topic1, mqtt_receivedQos=0, timestamp=1690624562308}]
+INFO MQTT Call: mqttConsumer com.cy.store.Mqtt.MqttCallbackHandle - MqttCallbackHandle:topic1---{
+  "msg": "hello world"
+}
+DEBUG MQTT Call: mqttConsumer org.springframework.integration.handler.ReplyProducingMessageHandlerWrapper - handler 'bean 'mqttConfig.handler.serviceActivator.handler' for component 'mqttConfig'' produced no reply for request Message: GenericMessage [payload={
+  "msg": "hello world"
+}, headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=d013ec25-8ba2-82df-09a6-598987ee1458, mqtt_receivedTopic=topic1, mqtt_receivedQos=0, timestamp=1690624562308}]
+DEBUG MQTT Call: mqttConsumer org.springframework.integration.channel.DirectChannel - postSend (sent=true) on channel 'bean 'mqttInboundChannel'; defined in: 'class path resource [com/cy/store/config/MqttConfig.class]'; from source: 'org.springframework.core.type.classreading.SimpleMethodMetadata@350aac89'', message: GenericMessage [payload={
+  "msg": "hello world"
+}, headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=d013ec25-8ba2-82df-09a6-598987ee1458, mqtt_receivedTopic=topic1, mqtt_receivedQos=0, timestamp=1690624562308}]
+DEBUG HikariPool-1 housekeeper com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG HikariPool-1 housekeeper com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG MQTT Call: mqttConsumer org.springframework.integration.channel.DirectChannel - preSend on channel 'bean 'mqttInboundChannel'; defined in: 'class path resource [com/cy/store/config/MqttConfig.class]'; from source: 'org.springframework.core.type.classreading.SimpleMethodMetadata@350aac89'', message: GenericMessage [payload={
+  "msg": "Hello World"
+}, headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=37a02fb5-8a7b-6f2f-8e77-b656f3a69758, mqtt_receivedTopic=topic1, mqtt_receivedQos=0, timestamp=1690624591217}]
+DEBUG MQTT Call: mqttConsumer org.springframework.integration.handler.ReplyProducingMessageHandlerWrapper - bean 'mqttConfig.handler.serviceActivator.handler' for component 'mqttConfig' received message: GenericMessage [payload={
+  "msg": "Hello World"
+}, headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=37a02fb5-8a7b-6f2f-8e77-b656f3a69758, mqtt_receivedTopic=topic1, mqtt_receivedQos=0, timestamp=1690624591217}]
+INFO MQTT Call: mqttConsumer com.cy.store.Mqtt.MqttCallbackHandle - MqttCallbackHandle:topic1---{
+  "msg": "Hello World"
+}
+DEBUG MQTT Call: mqttConsumer org.springframework.integration.handler.ReplyProducingMessageHandlerWrapper - handler 'bean 'mqttConfig.handler.serviceActivator.handler' for component 'mqttConfig'' produced no reply for request Message: GenericMessage [payload={
+  "msg": "Hello World"
+}, headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=37a02fb5-8a7b-6f2f-8e77-b656f3a69758, mqtt_receivedTopic=topic1, mqtt_receivedQos=0, timestamp=1690624591217}]
+DEBUG MQTT Call: mqttConsumer org.springframework.integration.channel.DirectChannel - postSend (sent=true) on channel 'bean 'mqttInboundChannel'; defined in: 'class path resource [com/cy/store/config/MqttConfig.class]'; from source: 'org.springframework.core.type.classreading.SimpleMethodMetadata@350aac89'', message: GenericMessage [payload={
+  "msg": "Hello World"
+}, headers={mqtt_receivedRetained=false, mqtt_id=0, mqtt_duplicate=false, id=37a02fb5-8a7b-6f2f-8e77-b656f3a69758, mqtt_receivedTopic=topic1, mqtt_receivedQos=0, timestamp=1690624591217}]
