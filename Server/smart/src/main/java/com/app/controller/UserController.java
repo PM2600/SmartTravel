@@ -50,14 +50,12 @@ public class UserController extends BaseController{
         user.setNickname(nickname);
         user.setPhone(phone);
         user.setPassword(password);
-        //user.setAddress(address);
         user.setSex(Integer.parseInt(sex));
 
         System.out.println(username);
         System.out.println(nickname);
         System.out.println(phone);
         System.out.println(password);
-        //System.out.println(address);
         System.out.println(sex);
 
         int code = userService.userInsert(user);
