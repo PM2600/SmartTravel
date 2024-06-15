@@ -128,6 +128,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 Looper.loop();
                                 intent = new Intent(RegisterActivity.this, MainActivity.class);
                                 startActivity(intent);
+                                finish();
                             } else if(resultBean.getState().equals("301")){
                                 Looper.prepare();
                                 Log.e("登录状态", "用户名已存在");

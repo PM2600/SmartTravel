@@ -219,7 +219,8 @@
             android:background="@drawable/shape_register_btn"
             android:layout_alignParentRight="true"
             android:text="注册"
-            android:textColor="#ffffff"
+            android:textColor="#000000"
+
             android:textSize="15sp" />
     </LinearLayout>
 </LinearLayout>

@@ -36,8 +36,8 @@
         </activity>
 
         <activity
-            android:label=""
             android:name=".LoginActivity"
+            android:theme="@style/HideStyle"
             android:exported="true">
         </activity>
 

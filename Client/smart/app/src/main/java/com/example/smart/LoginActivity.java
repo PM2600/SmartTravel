@@ -89,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
 
         Request request = new Request.Builder()
                 .post(formBody)
-                .url("http://10.141.27.125:8082/user/login")
+                .url("http://10.132.125.37:8082/user/login")
                 .build();
 
         OkHttpClient client = new OkHttpClient();
@@ -109,12 +109,20 @@ public class LoginActivity extends AppCompatActivity {
                     Gson gson = new Gson();
                     ResultBean resultBean = gson.fromJson(loginBody, ResultBean.class);
                     if(resultBean.getState().equals("200")){
-                        Looper.prepare();
                         Log.e("TAG", "登录成功");
-                        Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_LONG).show();
-                        Looper.loop();
-                        flag = true;
-                        return;
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_LONG).show();
+                            }
+                        });
+                        intent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
+//                        Looper.prepare();
+//                        Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_LONG).show();
+//                        Looper.loop();
+
                     }else{
                         Looper.prepare();
                         Log.e("TAG", "用户名或密码错误");
@@ -124,10 +132,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-        if(flag == true) {
-            intent = new Intent(LoginActivity.this, MainActivity.class);
-            startActivity(intent);
-        }
+
     }
 
     private void userRegister(){
