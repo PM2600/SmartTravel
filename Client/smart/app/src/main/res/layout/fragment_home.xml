@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue2"
         android:text="首页"
-        android:textColor="@color/black"
-        android:textSize="60sp"
-        android:textStyle="bold"
+        android:textSize="20dp"
         android:gravity="center"
-        android:id="@+id/tv"/>
+        android:textColor="@color/white">
+    </TextView>
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/toolbar"
+        />
+
+
+    <ListView
+        android:id="@+id/new_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:divider="#000000" />
+
 
 </LinearLayout>

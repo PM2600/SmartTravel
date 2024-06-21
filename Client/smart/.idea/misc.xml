@@ -4,24 +4,30 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable-press/main_dynamic_press.xml" value="0.3697916666666667" />
+        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable/browse.xml" value="0.1828125" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3697916666666667" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable/main_dynamic.xml" value="0.3697916666666667" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable/main_home.xml" value="0.3697916666666667" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable/main_service.xml" value="0.3697916666666667" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable/main_user.xml" value="0.3697916666666667" />
+        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable/shape_edit.xml" value="0.3697916666666667" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable/shape_login_btn.xml" value="0.18703703703703703" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable/shape_login_form.xml" value="0.18703703703703703" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/drawable/shape_register_btn.xml" value="0.18703703703703703" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/activity_guide.xml" value="0.33" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/activity_main.xml" value="0.3536458333333333" />
+        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/activity_map.xml" value="0.25" />
+        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/activity_news_view.xml" value="0.3375" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/activity_rgister.xml" value="0.33" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/activity_splash.xml" value="0.17147922998986828" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/fragment_dynamic.xml" value="0.1911231884057971" />
-        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/fragment_home.xml" value="0.1911231884057971" />
-        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/fragment_service.xml" value="0.1911231884057971" />
+        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/fragment_service.xml" value="0.33" />
         <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/fragment_user.xml" value="0.1911231884057971" />
-        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/main_tab_item.xml" value="0.1911231884057971" />
+        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/gridview_item.xml" value="0.25" />
+        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/main_tab_item.xml" value="0.33" />
+        <entry key="..\:/2.5/Android/project/smart/app/src/main/res/layout/news_item.xml" value="0.5" />
       </map>
     </option>
   </component>

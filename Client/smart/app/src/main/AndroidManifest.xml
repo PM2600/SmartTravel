@@ -7,10 +7,22 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
 
 
     <application
@@ -21,7 +33,11 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:networkSecurityConfig="@xml/network_security_config"
-        android:theme="@style/Theme.Smart">
+        android:theme="@style/HideStyle">
+
+        <service android:name="com.amap.api.location.APSService" />
+        <!--设置高德Key-->
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="496001c3bf20feeb84a820cf18e63afc"/>
 
 
         <activity
@@ -42,13 +58,28 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".RegisterActivity"
             android:theme="@style/HideStyle"
             android:exported="true">
         </activity>
 
         <activity
-            android:name=".RegisterActivity"
+            android:name=".MainActivity"
+            android:theme="@style/HideStyle"
+            android:exported="true">
+        </activity>
+
+<!--        android:label="首页"-->
+<!--        android:theme="@style/Theme.Intelligent_agriculture"-->
+
+        <activity
+            android:name=".NewsWebViewActivity"
+            android:theme="@style/HideStyle"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".MapActivity"
             android:theme="@style/HideStyle"
             android:exported="true">
         </activity>

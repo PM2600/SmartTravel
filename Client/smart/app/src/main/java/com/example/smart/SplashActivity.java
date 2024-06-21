@@ -1,5 +1,6 @@
 package com.example.smart;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
@@ -9,6 +10,10 @@ import android.widget.LinearLayout;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.amap.api.location.AMapLocationClient;
+import com.amap.api.maps.MapsInitializer;
+import com.amap.api.services.core.ServiceSettings;
+
 public class SplashActivity extends AppCompatActivity {
 
     private LinearLayout ll;
@@ -17,6 +22,19 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        Context context = this;
+        //定位隐私政策同意
+        AMapLocationClient.updatePrivacyShow(context,true,true);
+        AMapLocationClient.updatePrivacyAgree(context,true);
+        //地图隐私政策同意
+        MapsInitializer.updatePrivacyShow(context,true,true);
+        MapsInitializer.updatePrivacyAgree(context,true);
+        //搜索隐私政策同意
+        ServiceSettings.updatePrivacyShow(context,true,true);
+        ServiceSettings.updatePrivacyAgree(context,true);
+
+
         ll = findViewById(R.id.main_ll);
         //设置渐变效果
         setAlphaAnimation();

@@ -7,6 +7,7 @@ import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -32,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private Button loginBtn, registerBtn;
     private EditText edtname, edtpsw;
+    private CheckBox cbread;
     private Intent intent = null;
     private boolean flag = false;
 
@@ -49,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
         registerBtn = findViewById(R.id.btn_register);
         edtname = findViewById(R.id.edt_name);
         edtpsw = findViewById(R.id.edt_psw);
-
+        cbread = findViewById(R.id.cbread);
 //        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 //        StrictMode.setThreadPolicy(policy);
 
@@ -57,7 +59,11 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                userLogin();
+                if(cbread.isChecked()){
+                    userLogin();
+                }else{
+                    Toast.makeText(getApplicationContext(), "请勾选同意协议", Toast.LENGTH_LONG).show();
+                }
             }
         });
         registerBtn.setOnClickListener(new View.OnClickListener() {
@@ -89,7 +95,7 @@ public class LoginActivity extends AppCompatActivity {
 
         Request request = new Request.Builder()
                 .post(formBody)
-                .url("http://10.132.125.37:8082/user/login")
+                .url("http://10.141.27.125:8081/user/login")
                 .build();
 
         OkHttpClient client = new OkHttpClient();
@@ -105,7 +111,6 @@ public class LoginActivity extends AppCompatActivity {
                 if(response.isSuccessful()){
                     String loginBody  = response.body().string();
                     Log.e("TAG", loginBody);
-
                     Gson gson = new Gson();
                     ResultBean resultBean = gson.fromJson(loginBody, ResultBean.class);
                     if(resultBean.getState().equals("200")){
