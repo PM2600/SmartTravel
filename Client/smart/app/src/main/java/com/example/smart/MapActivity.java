@@ -16,12 +16,13 @@ import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.amap.api.maps.AMap;
+import com.amap.api.maps.LocationSource;
 import com.amap.api.maps.MapView;
 
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 
-public class MapActivity extends AppCompatActivity implements AMapLocationListener{
+public class MapActivity extends AppCompatActivity implements AMapLocationListener, LocationSource {
 
     private static final int REQUEST_PERMISSIONS = 9527;
     //声明AMapLocationClient类对象
@@ -29,6 +30,9 @@ public class MapActivity extends AppCompatActivity implements AMapLocationListen
     //声明AMapLocationClientOption对象
     public AMapLocationClientOption mLocationOption = null;
     private MapView mapView = null;
+    private AMap aMap = null;
+    private LocationSource.OnLocationChangedListener mListener = null;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,12 +44,10 @@ public class MapActivity extends AppCompatActivity implements AMapLocationListen
         mapView.onCreate(savedInstanceState);
 
         initLocation();
-        checkingAndroidVersion();
 
-        AMap aMap = null;
-        if (aMap == null) {
-            aMap = mapView.getMap();
-        }
+        initMap(savedInstanceState);
+
+        checkingAndroidVersion();
     }
 
     private void checkingAndroidVersion() {
@@ -69,7 +71,7 @@ public class MapActivity extends AppCompatActivity implements AMapLocationListen
 
         if (EasyPermissions.hasPermissions(this, permissions)) {
             //true 有权限 开始定位
-            showMsg("已获得权限，可以定位啦！");
+            //showMsg("已获得权限，可以定位啦！");
 
             mLocationClient.startLocation();
         } else {
@@ -136,7 +138,12 @@ public class MapActivity extends AppCompatActivity implements AMapLocationListen
 
                 Log.e("TAG", stringBuffer.toString());
                 showMsg(address);
-                //tvContent.setText(stringBuffer.toString());
+
+                mLocationClient.stopLocation();
+
+                if (mListener != null) {
+                    mListener.onLocationChanged(aMapLocation);
+                }
 
             } else {
                 //定位失败时，可通过ErrCode（错误码）信息来确定失败的原因，errInfo是错误信息，详见错误码表。
@@ -175,4 +182,38 @@ public class MapActivity extends AppCompatActivity implements AMapLocationListen
     }
 
 
+    /**
+     * 初始化地图
+     */
+    private void initMap(Bundle savedInstanceState) {
+        mapView = findViewById(R.id.map_view);
+        //在activity执行onCreate时执行mMapView.onCreate(savedInstanceState)，创建地图
+        mapView.onCreate(savedInstanceState);
+        //初始化地图控制器对象
+        aMap = mapView.getMap();
+
+        // 设置定位监听
+        aMap.setLocationSource(this);
+        // 设置为true表示显示定位层并可触发定位，false表示隐藏定位层并不可触发定位，默认是false
+        aMap.setMyLocationEnabled(true);
+    }
+
+
+    @Override
+    public void activate(OnLocationChangedListener onLocationChangedListener) {
+        mListener = onLocationChangedListener;
+        if (mLocationClient != null) {
+            mLocationClient.startLocation();//启动定位
+        }
+    }
+
+    @Override
+    public void deactivate() {
+        mListener = null;
+        if (mLocationClient != null) {
+            mLocationClient.stopLocation();
+            mLocationClient.onDestroy();
+        }
+        mLocationClient = null;
+    }
 }

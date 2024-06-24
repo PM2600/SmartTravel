@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import springfox.documentation.spring.web.json.Json;
 
 @RestController
 @RequestMapping("user")
@@ -47,6 +48,27 @@ public class UserController extends BaseController{
 
         int code = userService.userInsert(user);
         return new JsonResult<Void>(code);
+    }
+
+    @PostMapping("getinfo")
+    public User getInfo(String username){
+        User user = userService.getUserInfo(username);
+        return user;
+    }
+
+    @PostMapping("submit")
+    public JsonResult<Void> submitAdvise(String uid, String content){
+        Integer id = Integer.parseInt(uid);
+        int code = userService.submitAdvise(id, content);
+        return new JsonResult<Void>(code);
+    }
+
+    @PostMapping("updateinfo")
+    public JsonResult<Void> UpdateInfo(String uid, String nickname, String phone, String address, String sex){
+        Integer id = Integer.parseInt(uid);
+        Integer s = Integer.parseInt(sex);
+        int code = userService.Update(id, nickname, phone, address, s);
+        return new JsonResult<Void>(OK);
     }
 
 }

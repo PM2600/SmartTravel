@@ -1,6 +1,7 @@
 package com.example.smart;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Looper;
 import android.os.StrictMode;
@@ -12,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.smart.bean.ResultBean;
+import com.example.smart.entity.User;
 import com.google.gson.Gson;
 
 import androidx.annotation.Nullable;
@@ -31,6 +33,7 @@ import okhttp3.Response;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private String ip = "10.132.125.37:8081";
     private Button loginBtn, registerBtn;
     private EditText edtname, edtpsw;
     private CheckBox cbread;
@@ -95,7 +98,7 @@ public class LoginActivity extends AppCompatActivity {
 
         Request request = new Request.Builder()
                 .post(formBody)
-                .url("http://10.141.27.125:8081/user/login")
+                .url("http://" + ip + "/user/login")
                 .build();
 
         OkHttpClient client = new OkHttpClient();
@@ -121,12 +124,47 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_LONG).show();
                             }
                         });
+
+                        FormBody formBody = new FormBody.Builder()
+                                .add("username", name)
+                                .build();
+
+                        Request request = new Request.Builder()
+                                .post(formBody)
+                                .url("http://" + ip + "/user/getinfo")
+                                .build();
+
+                        OkHttpClient client = new OkHttpClient();
+                        okhttp3.Call call2 = client.newCall(request);
+                        call2.enqueue(new Callback() {
+                            @Override
+                            public void onFailure(Call call, IOException e) {
+                                Log.e("TAG：", "请求失败");
+                            }
+
+                            @Override
+                            public void onResponse(Call call, Response response) throws IOException {
+                                String info  = response.body().string();
+                                //Log.e("TAG", info);
+                                Gson gson = new Gson();
+                                User user = gson.fromJson(info, User.class);
+
+                                SharedPreferences.Editor editor= getSharedPreferences("user_token", MODE_PRIVATE).edit();
+                                editor.putString("uid", user.getUid().toString());
+                                editor.putString("username", name);
+                                editor.putString("password", pwd);
+                                editor.putString("phone", user.getPhone());
+                                editor.putString("nickname", user.getNickname());
+                                editor.putString("address", user.getAddress());
+                                editor.putString("sex", user.getSex() == 1 ? "男" : "女");
+                                editor.apply();
+                            }
+                        });
+
+
                         intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();
-//                        Looper.prepare();
-//                        Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_LONG).show();
-//                        Looper.loop();
 
                     }else{
                         Looper.prepare();

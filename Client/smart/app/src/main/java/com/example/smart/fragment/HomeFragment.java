@@ -55,6 +55,7 @@ import okhttp3.Response;
 
 public class HomeFragment extends Fragment {
 
+    private String ip = "10.132.125.37:8081";
     private Banner banner;
     private List<Integer> images = new ArrayList<>();
     private List<String> title = new ArrayList<>();
@@ -65,8 +66,7 @@ public class HomeFragment extends Fragment {
     SimpleAdapter simpleAdapter;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view =LayoutInflater.from(getActivity()).inflate(R.layout.fragment_home,container,false);
         banner = view.findViewById(R.id.banner);
         lv = (ListView) view.findViewById(R.id.new_listView);
@@ -98,7 +98,7 @@ public class HomeFragment extends Fragment {
 
     public void initData() {
         Request request = new Request.Builder()
-                .url("http://10.141.27.125:8081/news/getnews")
+                .url("http://" + ip + "/news/getnews")
                 .build();
         OkHttpClient client = new OkHttpClient();
         okhttp3.Call call = client.newCall(request);
@@ -240,7 +240,6 @@ public class HomeFragment extends Fragment {
             TextView new_date;
             TextView viewsNumber;
             TextView likeNumber;
-
         }
 
     }

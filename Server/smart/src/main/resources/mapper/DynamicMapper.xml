@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.app.mapper.DynamicMapper">
+
+    <select id="getDynamic" resultType="com.app.vo.DynamicView">
+        SELECT
+            did, t_dynamic.uid, nickname, address, dyphoto1, dyphoto2, dyphoto3, dytext, dylike, dycommit_time
+        FROM
+            t_user, t_dynamic
+        WHERE
+            t_dynamic.uid = t_user.uid;
+    </select>
+
+</mapper>

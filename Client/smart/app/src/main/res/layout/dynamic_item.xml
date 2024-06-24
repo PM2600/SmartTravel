@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+        <TextView
+            android:id="@+id/dy_name"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:textSize="15dp"
+            android:textColor="#5B4CB1"
+            android:text="名字"
+            android:gravity="center_vertical"
+            android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/dy_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="2024-06-23 10:38:10"
+                android:gravity="right"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dy_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textSize="15dp"
+            android:text="你好世界"
+            android:singleLine="true"/>
+
+        <ImageView
+            android:id="@+id/dy_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:src="@mipmap/ic_launcher" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/dy_addr"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:text="内蒙古苏尼特右旗"
+                android:gravity="center_vertical"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/dy_like"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:textSize="15dp"
+                android:text="点赞数"
+                android:gravity="right"
+                android:singleLine="true"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

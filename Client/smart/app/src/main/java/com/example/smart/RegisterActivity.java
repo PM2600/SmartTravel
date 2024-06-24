@@ -28,6 +28,7 @@ import okhttp3.Response;
 
 public class RegisterActivity extends AppCompatActivity {
 
+    private String ip = "10.132.125.37:8081";
     private EditText edtname, edtpassword, edtnickname, edtphone, edtaddress;
     private Button Btnregister;
     private RadioButton rb_man, rb_woman;
@@ -102,7 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                 Request request = new Request.Builder()
                         .post(formBody)
-                        .url("http://10.132.125.37:8082/user/register")
+                        .url("http://" + ip + "/user/register")
                         .build();
 
                 OkHttpClient client = new OkHttpClient();

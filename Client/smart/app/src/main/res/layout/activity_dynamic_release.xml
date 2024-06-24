@@ -4,23 +4,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/blue2"
-        android:text="首页"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:textColor="@color/white">
-    </TextView>
-
-
-    <com.youth.banner.Banner
-        android:id="@+id/banner"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/toolbar"
-        />
 
 
     <ListView

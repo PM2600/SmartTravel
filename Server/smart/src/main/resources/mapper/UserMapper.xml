@@ -23,4 +23,33 @@
             #{phone})
     </insert>
 
+    <select id="getUserInfo" resultType="com.app.entity.User">
+        SELECT
+            *
+        FROM
+            t_user
+        WHERE
+            username = #{name}
+    </select>
+
+    <insert id="submitAdvise" useGeneratedKeys="true" keyProperty="aid">
+        INSERT INTO t_advise (uid, content, createTime)
+        VALUES(
+            #{uid},
+            #{content},
+            #{createTime}
+        )
+    </insert>
+
+    <update id="Update">
+        UPDATE
+            t_user
+        SET
+            nickname = #{nickname},
+            phone = #{phone},
+            address = #{address},
+            sex = #{sex}
+        WHERE
+            uid = #{uid}
+    </update>
 </mapper>
