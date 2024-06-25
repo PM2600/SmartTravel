@@ -65,6 +65,8 @@ public class HomeFragment extends Fragment {
     private NewsAdapter newsAdapter;
     SimpleAdapter simpleAdapter;
 
+    int[] imgs = {R.drawable.ic1, R.drawable.ic2, R.drawable.ic3, R.drawable.ic4, R.drawable.ic5, R.drawable.ic6, R.drawable.ic7, R.drawable.ic8, R.drawable.ic9};
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view =LayoutInflater.from(getActivity()).inflate(R.layout.fragment_home,container,false);
@@ -73,15 +75,21 @@ public class HomeFragment extends Fragment {
         images.clear();
         title.clear();
         ls.clear();
-        images.add(R.drawable.image1);
-        images.add(R.drawable.image2);
-        images.add(R.drawable.image3);
-        images.add(R.drawable.image4);
+//        images.add(R.drawable.image1);
+//        images.add(R.drawable.image2);
+//        images.add(R.drawable.image3);
+//        images.add(R.drawable.image4);
+        images.add(R.drawable.one);
+        images.add(R.drawable.two);
+        images.add(R.drawable.three);
+        images.add(R.drawable.four);
+        images.add(R.drawable.five);
         newsAdapter = new NewsAdapter();
         title.add("one");
         title.add("two");
         title.add("three");
         title.add("four");
+        title.add("five");
 
         initView();
         return view;
@@ -215,6 +223,7 @@ public class HomeFragment extends Fragment {
                 holder.new_title = view.findViewById(R.id.new_title);
                 holder.new_context = view.findViewById(R.id.new_context);
                 holder.new_date = view.findViewById(R.id.new_date);
+                holder.new_img = view.findViewById(R.id.new_img);
 //                holder.likeNumber = view.findViewById(R.id.likeNumber);
 //                holder.viewsNumber = view.findViewById(R.id.viewsNumber);
                 view.setTag(holder);
@@ -229,8 +238,7 @@ public class HomeFragment extends Fragment {
             holder.new_date.setText(ls.get(i).getCreateTime() + "");
             holder.new_context.setText(ls.get(i).getContent());
             holder.new_title.setText(ls.get(i).getTitle());
-//            holder.likeNumber.setText(ls.get(i).getLikeNumber() + "");
-//            holder.viewsNumber.setText(ls.get(i).getViewsNumber() + "");
+            holder.new_img.setImageResource(imgs[i]);
 
             return view;
         }
@@ -240,6 +248,7 @@ public class HomeFragment extends Fragment {
             TextView new_date;
             TextView viewsNumber;
             TextView likeNumber;
+            ImageView new_img;
         }
 
     }

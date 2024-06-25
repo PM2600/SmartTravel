@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/arrow_left"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="动态发布"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/btn_back"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/et_nick"
+                android:textSize="16sp"
+                android:background="@null"
+                android:hint="动态内容..."/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/photo"
+            android:id="@+id/img"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#F6F5F4"
+            />
+
+
+        <Button
+            android:id="@+id/addphoto"
+            android:background="@drawable/add"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_release"
+        android:layout_marginTop="50dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="发布"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/shape_register_btn"/>
+<!--    <Button-->
+<!--        android:id="@+id/btn_clear"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:text="清空"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="#107FD8"-->
+<!--        android:background="@drawable/shape_login_btn"/>-->
+</LinearLayout>

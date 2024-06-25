@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -20,6 +21,7 @@ import androidx.annotation.Nullable;
 import com.example.smart.DragFloatActionButton;
 import com.example.smart.NewsWebViewActivity;
 import com.example.smart.R;
+import com.example.smart.ReleaseActivity;
 import com.example.smart.bean.ResultDynamic;
 import com.example.smart.bean.ResultNews;
 import com.example.smart.entity.Dynamic;
@@ -43,6 +45,8 @@ public class DynamicFragment extends BaseFragment {
     private List<Dynamic> ls = new ArrayList<>();;
     private ListView lv;
     private DynamicAdapter dynamicAdapter;
+    private Button send_btn;
+    private Intent intent = null;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -56,6 +60,7 @@ public class DynamicFragment extends BaseFragment {
         dynamicAdapter = new DynamicAdapter();
         lv = (ListView) view.findViewById(R.id.dy_listView);
         tv = (TextView) view.findViewById(R.id.tv);
+        send_btn = view.findViewById(R.id.send_btn);
 //        mBtn = view.findViewById(R.id.img_btn);
 //        mBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -63,6 +68,14 @@ public class DynamicFragment extends BaseFragment {
 //                Log.e("TAG", "点击了拖拽按钮");
 //            }
 //        });
+
+        send_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(getContext(), ReleaseActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         Request request = new Request.Builder()

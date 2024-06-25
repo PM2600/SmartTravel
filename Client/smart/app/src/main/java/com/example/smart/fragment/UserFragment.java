@@ -15,6 +15,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.example.smart.AdviseActivity;
 import com.example.smart.LoginActivity;
+import com.example.smart.MainActivity;
 import com.example.smart.ManagerActivity;
 import com.example.smart.PrivacyActivity;
 import com.example.smart.R;
@@ -102,6 +103,7 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
         }
         // 页面跳转
         startActivity(intent);
+
     }
 }
 

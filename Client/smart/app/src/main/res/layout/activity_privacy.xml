@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/arrow_left"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="隐私协议"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/btn_back"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="智旅隐私协议"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#202020"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="欢迎使用智旅应用程序(以下简称“《智旅》”)。我们非常重视保护用户的隐私权并承诺保护您的个人信息安全。在使用《智旅》之前，请您仔细阅读并同意本隐私协议。"
+                android:textSize="15sp"
+                android:textColor="#202020"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="1.信息收集范围与方式"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#202020"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="为了向您提供更好的服务，我们可能会收集和使用下列与您个人身份有关的信息:\n注册与登录信息:当您注册或登录《智旅》时，我们可能会收集您的用户名、手机号码等信息。\n位置信息:如果您授权开启位置权限，我们可能会获取您的地理位置信息，用于提供基于位置的相关服务。\n日志信息:当您使用《智旅》时，我们的服务器会自动记录一些信息，包括您的IP地址、设备信息、访问时间等。\n设备信息:我们可能会收集您使用的设备类型、操作系统版本、唯一设备标识符等信息，用于优化和改进我们的服务。\n其他信息:您在使用《智旅》过程中提供的其他信息，或您与我们联系时提供的信息。"
+                android:textSize="15sp"
+                android:textColor="#202020"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="2.信息使用目的"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#202020"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="我们收集和使用您的个人信息主要是为了实现以下目的\n提供、优化和改进《智旅》的功能和服务。\n处理您的订单和交易请求。\n向您推荐相关商品或特产信息。\n分析和统计数据，进行市场调研和用户行为分析。"
+                android:textSize="15sp"
+                android:textColor="#202020"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="3.信息保护措施"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#202020"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="我们将采取合理的安全措施来保护您的个人信息。我们承诺采取必要的技术手段和管理措施，以防止用户的个人信息遭到未经授权的访问、使用或泄露。"
+                android:textSize="15sp"
+                android:textColor="#202020"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="4.信息分享与披露"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#202020"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="除非获得您的明确同意或法律法规另有要求，否则我们不会向第三方分享您的个人信息。但在以下情况下，我们可能会披露您的个人信息:\n根据法律法规、法律程序或政府要求进行披露。\n在涉及合并、收购或资产转让时，如果涉及到个人信息转让，我们会要求新的持有者继续保护这些个人信息的机密性。"
+                android:textSize="15sp"
+                android:textColor="#202020"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="5.第三方链接与合作伙伴"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#202020"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="《智旅》可能包含指向第三方网站或服务的链接，点击这些链接将跳转至第三方提供的页面。第三方网站和服务的隐私政策不在我们的控制范围内，请您在访问第三方网站前查阅其隐私政策。此外，我们可能与合作伙伴共享某些用户信息，以提供更好的服务。"
+                android:textSize="15sp"
+                android:textColor="#202020"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="6.未成年人保护"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#202020"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="我们重视对未成年人个人信息的保护。如果您是未满18周岁的未成年人，在使用《智旅》前，请您务必取得父母或法定监护人的同意，并请在其监护下正确使用《智旅》。"
+                android:textSize="15sp"
+                android:textColor="#202020"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:text="7.隐私协议的变更"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#202020"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="我们将根据需要适时修订本隐私协议，并在《智旅》上公布更新的版本。如您继续使用《智旅》，即表示您同意并接受修订后的隐私协议。\n如果您对本隐私协议有任何疑问或意见，请联系我们。感谢您的信任和支持!"
+                android:textSize="15sp"
+                android:textColor="#202020"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="生效日期：2024年6月25日"
+                android:textSize="15sp"
+                android:textColor="#A8A8A8"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

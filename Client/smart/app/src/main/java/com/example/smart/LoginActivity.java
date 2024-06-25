@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.smart.bean.ResultBean;
@@ -36,6 +37,7 @@ public class LoginActivity extends AppCompatActivity {
     private String ip = "10.132.125.37:8081";
     private Button loginBtn, registerBtn;
     private EditText edtname, edtpsw;
+    private TextView privacy;
     private CheckBox cbread;
     private Intent intent = null;
     private boolean flag = false;
@@ -55,8 +57,18 @@ public class LoginActivity extends AppCompatActivity {
         edtname = findViewById(R.id.edt_name);
         edtpsw = findViewById(R.id.edt_psw);
         cbread = findViewById(R.id.cbread);
+
+        privacy = findViewById(R.id.privacy);
 //        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 //        StrictMode.setThreadPolicy(policy);
+
+        privacy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(LoginActivity.this, PrivacyActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         loginBtn.setOnClickListener(new View.OnClickListener() {

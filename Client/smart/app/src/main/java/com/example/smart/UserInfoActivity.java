@@ -137,6 +137,12 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
 
         SharedPreferences sp = this.getSharedPreferences("user_token", MODE_PRIVATE);
         String uid = sp.getString("uid", "");
+        SharedPreferences.Editor editor= getSharedPreferences("user_token", MODE_PRIVATE).edit();
+        editor.putString("nickname", nickname);
+        editor.putString("phone", phone);
+        editor.putString("address", address);
+        editor.putString("sex", sex);
+
 
         FormBody formBody = new FormBody.Builder()
                 .add("uid", uid)

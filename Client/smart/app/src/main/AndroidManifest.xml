@@ -108,6 +108,18 @@
             android:theme="@style/HideStyle"
             android:exported="true">
         </activity>
+
+        <activity
+            android:name=".ReleaseActivity"
+            android:theme="@style/HideStyle"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".TakePhotoActivity"
+            android:theme="@style/HideStyle"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

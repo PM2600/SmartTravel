@@ -37,7 +37,6 @@
             android:layout_marginTop="5dp"
             android:text="时间"
             android:textSize="10sp"
-            android:textStyle="bold"
             android:textColor="#202020"/>
 
 
@@ -49,7 +48,7 @@
             android:layout_marginTop="5dp"
             android:text="来源："
             android:textSize="10sp"
-            android:textStyle="bold"
+
             android:textColor="#202020"/>
 
         <TextView
@@ -63,7 +62,7 @@
             android:scrollbars="vertical"
             android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
             android:textSize="15sp"
-            android:textStyle="bold"
+
             android:textColor="#202020"/>
         </LinearLayout>
     </ScrollView>
