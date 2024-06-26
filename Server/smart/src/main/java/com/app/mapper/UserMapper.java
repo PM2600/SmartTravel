@@ -18,4 +18,5 @@ public interface UserMapper {
     Integer submitAdvise(Advise advise);
 
     Integer Update(Integer uid, String nickname, String phone, String address, Integer sex);
+
 }

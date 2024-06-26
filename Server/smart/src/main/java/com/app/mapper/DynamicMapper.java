@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface DynamicMapper {
     List<DynamicView> getDynamic();
+
+    Integer releaseDynamic(Dynamic dynamic);
 }

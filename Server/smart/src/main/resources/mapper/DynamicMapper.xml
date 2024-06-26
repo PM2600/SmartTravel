@@ -13,4 +13,13 @@
             t_dynamic.uid = t_user.uid;
     </select>
 
+    <insert id="releaseDynamic" useGeneratedKeys="true" keyProperty="did">
+        INSERT INTO t_dynamic(uid, dytext, dylike)
+        VALUES(
+            #{uid},
+            #{dytext},
+            #{dylike}
+        )
+    </insert>
+
 </mapper>

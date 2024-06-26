@@ -7,7 +7,7 @@ public class Dynamic {
     private String dyphoto2;
     private String dyphoto3;
     private String dytext;
-    private String dylike;
+    private Integer dylike;
     private String dycommit_time;
 
     public int getDid() {
@@ -58,11 +58,11 @@ public class Dynamic {
         this.dytext = dytext;
     }
 
-    public String getDylike() {
+    public Integer getDylike() {
         return dylike;
     }
 
-    public void setDylike(String dylike) {
+    public void setDylike(Integer dylike) {
         this.dylike = dylike;
     }
 
