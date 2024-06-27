@@ -138,10 +138,14 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
         SharedPreferences sp = this.getSharedPreferences("user_token", MODE_PRIVATE);
         String uid = sp.getString("uid", "");
         SharedPreferences.Editor editor= getSharedPreferences("user_token", MODE_PRIVATE).edit();
+        editor.clear();
+
+        editor.putString("uid", uid);
+        editor.putString("sex", uid.equals("1") ? "男" : "女");
         editor.putString("nickname", nickname);
         editor.putString("phone", phone);
         editor.putString("address", address);
-        editor.putString("sex", sex);
+        editor.apply();
 
 
         FormBody formBody = new FormBody.Builder()
@@ -178,6 +182,7 @@ public class UserInfoActivity extends AppCompatActivity implements View.OnClickL
                             @Override
                             public void run() {
                                 Toast.makeText(getApplicationContext(),"用户信息修改成功", Toast.LENGTH_LONG).show();
+                                setResult(200);
                                 finish();
                             }
                         });

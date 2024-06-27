@@ -13,28 +13,22 @@
             android:layout_width="250dp"
             android:layout_height="70dp"
             android:layout_marginLeft="80dp"
-            android:text="动态"
+            android:text="景区景点"
             android:textSize="18dp"
             android:layout_marginTop="16dp"
             android:gravity="center"
             android:textColor="@color/white">
         </TextView>
 
-        <Button
-            android:id="@+id/send_btn"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:text="发布">
-        </Button>
+
 
     </LinearLayout>
-        <ListView
-            android:id="@+id/dy_listView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp"
-            android:divider="#000000" />
+    <ListView
+        android:id="@+id/view_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:divider="#000000" />
 
 
 

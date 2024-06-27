@@ -1,6 +1,9 @@
 package com.example.smart.fragment;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Looper;
 import android.util.Log;
@@ -47,6 +50,14 @@ public class DynamicFragment extends BaseFragment {
     private DynamicAdapter dynamicAdapter;
     private Button send_btn;
     private Intent intent = null;
+    private View view;
+    int[] images = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four, R.drawable.five};
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        startActivity(new Intent(getActivity(), getActivity().getClass()));
+    }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -55,25 +66,19 @@ public class DynamicFragment extends BaseFragment {
 
     @Override
     public View initView() {
-        View view = View.inflate(getActivity(), R.layout.fragment_dynamic,null);
+        view = View.inflate(getActivity(), R.layout.fragment_dynamic,null);
+
         ls.clear();
         dynamicAdapter = new DynamicAdapter();
         lv = (ListView) view.findViewById(R.id.dy_listView);
         tv = (TextView) view.findViewById(R.id.tv);
         send_btn = view.findViewById(R.id.send_btn);
-//        mBtn = view.findViewById(R.id.img_btn);
-//        mBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Log.e("TAG", "点击了拖拽按钮");
-//            }
-//        });
 
         send_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 intent = new Intent(getContext(), ReleaseActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, 200);
             }
         });
 
@@ -104,18 +109,6 @@ public class DynamicFragment extends BaseFragment {
                             @Override
                             public void run() {
                                 lv.setAdapter(dynamicAdapter);
-//                                lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//                                    @Override
-//                                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                                        Intent intent = new Intent(getActivity(), NewsWebViewActivity.class);
-//                                        intent.putExtra("nickname", ls.get(i).getNickname());
-//                                        intent.putExtra("dytext", ls.get(i).getDytext());
-//                                        intent.putExtra("time", ls.get(i).getDycommit_time());
-//                                        intent.putExtra("like", ls.get(i).getDylike());
-//                                        intent.putExtra("addr", ls.get(i).getAddress());
-//                                        startActivity(intent);
-//                                    }
-//                                });
                             }
                         });
 
@@ -182,15 +175,21 @@ public class DynamicFragment extends BaseFragment {
             holder.dy_text.setText(ls.get(i).getDytext());
             holder.dy_addr.setText(ls.get(i).getAddress());
             holder.dy_like.setText(ls.get(i).getDylike());
+            holder.dy_img.setImageResource(images[i]);
+
+            holder.dy_img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Bitmap bitmap0 = ((BitmapDrawable)holder.dy_img.getDrawable()).getBitmap();
+                    bigImageLoader(bitmap0);
+                }
+            });
 
 //            holder.dy_name.setText("a");
 //            holder.dy_date.setText("a");
 //            holder.dy_text.setText("a");
 //            holder.dy_addr.setText("a");
 //            holder.dy_like.setText("a");
-
-            //holder.dy_img.setText(ls.get(i).getTitle());
-
 
             return view;
         }
@@ -205,4 +204,18 @@ public class DynamicFragment extends BaseFragment {
 
     }
 
+    private void bigImageLoader(Bitmap bitmap){
+        final Dialog dialog = new Dialog(getActivity());
+        ImageView image = new ImageView(getContext());
+        image.setImageBitmap(bitmap);
+        dialog.setContentView(image);
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        dialog.show();
+        image.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                dialog.cancel();
+            }
+        });
+    }
 }

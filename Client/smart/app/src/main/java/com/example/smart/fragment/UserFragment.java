@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.smart.AdviseActivity;
@@ -34,11 +35,30 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
     private LinearLayout ll_privacy;
     private LinearLayout ll_advice;
     private Toolbar toolbar;
+    private View view;
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        SharedPreferences sp = getActivity().getSharedPreferences("user_token", Context.MODE_PRIVATE);
+        String nickname = sp.getString("nickname","未设置");
+        String sex = sp.getString("sex","未设置");
+        String address = sp.getString("address","未设置");
+        Log.e("TAG", nickname);
+        Log.e("TAG", sex);
+        Log.e("TAG", address);
+
+        // 把用户名显示到textView控件上
+        tv_nickname.setText(nickname);
+        tv_sex.setText(sex);
+        tv_address.setText(address);
+        startActivity(new Intent(getActivity(), getActivity().getClass()));
+    }
 
     @Override
     public View initView() {
         Log.i(TAG, "用户中心的视图被实例化了");
-        View view = View.inflate(getContext(), R.layout.fragment_user, null);
+        view = View.inflate(getContext(), R.layout.fragment_user, null);
 
         ll_advice = view.findViewById(R.id.ll_advice);
         ll_info = view.findViewById(R.id.ll_info);
@@ -82,7 +102,8 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.ll_info:
                 intent = new Intent(getContext(), UserInfoActivity.class);
-                break;
+                startActivityForResult(intent, 200);
+                return;
             case R.id.ll_manager:
                 intent = new Intent(getContext(), ManagerActivity.class);
                 break;
@@ -103,7 +124,6 @@ public class UserFragment extends BaseFragment implements View.OnClickListener {
         }
         // 页面跳转
         startActivity(intent);
-
     }
 }
 

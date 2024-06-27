@@ -100,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="隐私协议"
-                android:textSize="11.5dp"
+                android:textSize="12dp"
                 android:layout_marginTop="4.5dp"
                 android:textColor="@color/blue2"/>
 

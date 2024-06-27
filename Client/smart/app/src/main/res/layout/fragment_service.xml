@@ -30,7 +30,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/new_img"
+            android:id="@+id/wea_img"
             android:layout_width="110dp"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"

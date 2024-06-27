@@ -45,7 +45,7 @@ public class TakePhotoActivity extends AppCompatActivity {
 
     private String imgString = ""; //要上传的图片路径
     private String mFilePath="";  //拍照得到的原图保存的图片路径
-    private Button btn_photo;
+    private Button btn_photo, btn_release;
     private TextView tv;
     private ImageView img;
     private Toolbar toolbar;
@@ -61,18 +61,31 @@ public class TakePhotoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_release);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         btn_photo = findViewById(R.id.send_btn);
+        btn_release = findViewById(R.id.btn_release);
         img = findViewById(R.id.img);
 
         /**
          * 解决android7调用照相机后直接奔溃问题
          */
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
-            StrictMode.setVmPolicy(builder.build());
-            builder.detectFileUriExposure();
-        }
-        checkPermission();
-        initListener();
+
+        btn_release.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.e("TAG","提交按钮");
+                finish();
+            }
+        });
+
+
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+//            StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+//            StrictMode.setVmPolicy(builder.build());
+//            builder.detectFileUriExposure();
+//        }
+//        checkPermission();
+//        initListener();
+
+
     }
 
     /**
@@ -92,6 +105,8 @@ public class TakePhotoActivity extends AppCompatActivity {
     }
 
     private void initListener() {
+
+
         // 顶部返回
         toolbar.setNavigationIcon(R.drawable.arrow_left);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -153,6 +168,7 @@ public class TakePhotoActivity extends AppCompatActivity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
         if (resultCode == RESULT_OK) {
             Uri uri = data.getData();  //获取数据
             ContentResolver contentResolver = getContentResolver();
@@ -162,7 +178,7 @@ public class TakePhotoActivity extends AppCompatActivity {
                 try {
                     bitmap = BitmapFactory.decodeStream(contentResolver.openInputStream(uri));  //将对象存入Bitmap中
 
-                    saveBitmap(bitmap);
+                    //saveBitmap(bitmap);
 
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();

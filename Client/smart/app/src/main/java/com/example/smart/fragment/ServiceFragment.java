@@ -9,14 +9,17 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridLayout;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.smart.FoodActivity;
 import com.example.smart.MapActivity;
 import com.example.smart.NewsWebViewActivity;
 import com.example.smart.R;
+import com.example.smart.ViewActivity;
 import com.example.smart.bean.ResultNews;
 import com.example.smart.bean.ResultWeather;
 import com.example.smart.entity.Weather;
@@ -40,6 +43,8 @@ public class ServiceFragment extends BaseFragment {
     private TextView tv;
     private TextView weather_tem, weather_wea, weather_city, weather_wind, weather_windspeed, weather_hum, weather_time;
     int [] rd={R.drawable.map,R.drawable.bus,R.drawable.food,R.drawable.view};
+    private ImageView wea_img;
+    private Intent intent = null;
 
 
     @Override
@@ -53,6 +58,7 @@ public class ServiceFragment extends BaseFragment {
         weather_windspeed = view.findViewById(R.id.weather_windspeed);
         weather_hum = view.findViewById(R.id.weather_hum);
         weather_time = view.findViewById(R.id.weather_time);
+        wea_img = view.findViewById(R.id.wea_img);
 
         GridView gridview = (GridView)view.findViewById(R.id.gridview);
         String[] name = {"城市地图", "智慧出行", "特产美食", "景区景点"};
@@ -82,14 +88,21 @@ public class ServiceFragment extends BaseFragment {
             switch(position){
                 case 0:
                     Log.e("TAG", "地图模块被点击");
-                    Intent intent = new Intent(getActivity(), MapActivity.class);
+                    intent = new Intent(getActivity(), MapActivity.class);
                     startActivity(intent);
                     break;
                 case 1:
+
                     break;
                 case 2:
+                    Log.e("TAG", "特产美食被点击");
+                    intent = new Intent(getActivity(), FoodActivity.class);
+                    startActivity(intent);
                     break;
                 case 3:
+                    Log.e("TAG", "景区景点被点击");
+                    intent = new Intent(getActivity(), ViewActivity.class);
+                    startActivity(intent);
                     break;
             }
         }
@@ -131,9 +144,9 @@ public class ServiceFragment extends BaseFragment {
                         weather_hum.setText("湿度：" + weather.get(0).getHumidity());
                         weather_time.setText(weather.get(0).getReporttime().substring(0, 10));
 
-                        Looper.prepare();
-                        Toast.makeText(getActivity(), "请求天气成功", Toast.LENGTH_LONG).show();
-                        Looper.loop();
+//                        Looper.prepare();
+//                        Toast.makeText(getActivity(), "请求天气成功", Toast.LENGTH_LONG).show();
+//                        Looper.loop();
 
                     } else {
                         Looper.prepare();
