@@ -65,7 +65,7 @@ public class HomeFragment extends Fragment {
     private NewsAdapter newsAdapter;
     SimpleAdapter simpleAdapter;
 
-    int[] imgs = {R.drawable.ic1, R.drawable.ic2, R.drawable.ic3, R.drawable.ic4, R.drawable.ic5, R.drawable.ic6, R.drawable.ic7, R.drawable.ic8, R.drawable.ic9};
+    int[] imgs = {R.drawable.ic1, R.drawable.ic2, R.drawable.ic3, R.drawable.ic4, R.drawable.ic5, R.drawable.ic6, R.drawable.ic7, R.drawable.ic8, R.drawable.ic9, R.drawable.ic10};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -96,7 +96,6 @@ public class HomeFragment extends Fragment {
     }
 
 
-
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -125,7 +124,7 @@ public class HomeFragment extends Fragment {
                     ResultNews news = gson.fromJson(Body, ResultNews.class);
 //                    News[] array = new Gson().fromJson(Body, News[].class);
 //                    List<News> ls = Arrays.asList(array);
-                    //List<News> ls = gson.fromJson(Body, new TypeToken<List<News>>() {}.getType());
+//                    List<News> ls = gson.fromJson(Body, new TypeToken<List<News>>() {}.getType());
                     System.out.println(ls.size());
                     if (news.getState() == 200) {
                         Log.e("TAG", "请求新闻成功");
